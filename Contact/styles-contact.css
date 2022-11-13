@@ -1,26 +1,28 @@
 * {
   list-style: none;
+  margin: 0;
 }
 
 header {
   font-weight: bold;
+  font-size: 48px;
   text-align: center;
   background-color: whitesmoke;
 }
 
 .container {
-  width: 190vh;
-  height: 125vh;
+  width: 220vh;
+  height: 150vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  transform: scale(80%);
+  transform: scale(85%);
 }
 .container__email {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -29,8 +31,8 @@ header {
   border-radius: 50px;
 }
 .container__github {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -39,8 +41,8 @@ header {
   border-radius: 50px;
 }
 .container__linkedin {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -49,8 +51,8 @@ header {
   border-radius: 50px;
 }
 .container__mcpedl {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -59,8 +61,8 @@ header {
   border-radius: 50px;
 }
 .container__youtube {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -69,8 +71,8 @@ header {
   border-radius: 50px;
 }
 .container__pixelsperfect {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -80,8 +82,14 @@ header {
 }
 
 section ul > li > img {
-  max-width: 100px;
-  max-height: 100px;
+  width: 250px;
+  height: 250px;
+  background-color: whitesmoke;
+}
+
+section ul > li > a > img {
+  width: 250px;
+  height: 250px;
   background-color: whitesmoke;
 }
 
@@ -97,6 +105,7 @@ nav > ul {
   margin-right: 10vh;
   width: 30vh;
   height: 10vh;
+  font-size: 24px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +123,7 @@ nav > ul {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .text--subtitle {
-  font-size: xx-small;
+  font-size: 24px;
   color: lightslategrey;
   font-family: Arial;
   font-weight: 100;
@@ -122,5 +131,5 @@ nav > ul {
 .text--socials {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: red;
-  font-size: small;
+  font-size: 30px;
 }

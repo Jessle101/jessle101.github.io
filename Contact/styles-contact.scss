@@ -7,27 +7,29 @@ $default-title__font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 
 * {
   list-style: none;
+  margin: 0;
 }
 header {
   font-weight: bold;
+  font-size: 48px;
   text-align: center;
   background-color: $default-background__color;
 }
 .container {
-  width: 190vh;
-  height: 125vh;
+  width: 220vh;
+  height: 150vh;
   //flexbox
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  transform: scale(80%);
+  transform: scale(85%);
   // border: 2px solid black;
 
   &__email {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -37,8 +39,8 @@ header {
   }
 
   &__github {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -48,8 +50,8 @@ header {
   }
 
   &__linkedin {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -59,8 +61,8 @@ header {
   }
 
   &__mcpedl {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -70,8 +72,8 @@ header {
   }
 
   &__youtube {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -81,8 +83,8 @@ header {
   }
 
   &__pixelsperfect {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -93,8 +95,14 @@ header {
 }
 
 section ul > li > img {
-  max-width: 100px;
-  max-height: 100px;
+  width: 250px;
+  height: 250px;
+  background-color: $default-background__color;
+}
+
+section ul > li > a > img {
+  width: 250px;
+  height: 250px;
   background-color: $default-background__color;
 }
 nav {
@@ -111,6 +119,7 @@ nav > ul {
   margin-right: 10vh;
   width: 30vh;
   height: 10vh;
+  font-size: 24px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +137,7 @@ nav > ul {
     font-family: $default-title__font;
   }
   &--subtitle {
-    font-size: xx-small;
+    font-size: 24px;
     color: $default-subtitle__color;
     font-family: $default-subtitle__font;
     font-weight: 100;
@@ -137,6 +146,6 @@ nav > ul {
   &--socials {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: red;
-    font-size: small;
+    font-size: 30px;
   }
 }
