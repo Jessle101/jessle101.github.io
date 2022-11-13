@@ -2,45 +2,80 @@
   margin: 0;
 }
 
-.card {
-  border: 1px solid transparent;
+nav {
   background-color: whitesmoke;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav > ul {
+  margin-right: 10vh;
+  width: 30vh;
+  height: 10vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.card {
+  width: 500vh;
   height: 350vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.card__secondary {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 .card__landing {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 10px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 .card__about-me {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 .card__tech-skills {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
+  width: 350px;
+  height: 200px;
+  text-align: center;
 }
 .card__projects {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 .card__contact {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 200px;
 }
 
 .text {
@@ -54,4 +89,33 @@
   font-size: xx-small;
   color: lightslategrey;
   font-family: Arial;
+  font-weight: 100;
+}
+
+.btn {
+  transform: scale(150%);
+  border-radius: 100px;
+  border-width: 2px;
+  background-color: lightcyan;
+}
+.btn--title {
+  color: rgb(72, 72, 196);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.btn--subtitle {
+  font-size: xx-small;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+  transform: scale(67%);
+}
+
+.btn:hover {
+  transform: scale(155%);
+  cursor: grab;
+}
+
+.btn:active {
+  color: red;
 }

@@ -1,3 +1,4 @@
+$default-background__color: whitesmoke;
 $default-subtitle__color: lightslategrey;
 $default-subtitle__font: Arial;
 $default-title__color: black;
@@ -9,49 +10,88 @@ $default-title__font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 }
 
 // Sections Formatting
-.card {
-  border: 1px solid transparent;
-  background-color: whitesmoke;
+nav {
+  background-color: $default-background__color;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  height: 350vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-  &__landing {
-    padding-top: 25px;
+nav > ul {
+  // border: 1px solid black;
+  margin-right: 10vh;
+  width: 30vh;
+  height: 10vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $default-background__color;
+}
+
+.card {
+  width: 500vh;
+  height: 350vh;
+  //flexbox
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  &__secondary {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+  }
+  &__landing {
+    padding-top: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
   }
 
   &__about-me {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
   }
 
   &__tech-skills {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid black;
+    width: 350px;
+    height: 200px;
+    text-align: center;
   }
 
   &__projects {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
   }
 
   &__contact {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding-bottom: 50px;
+    width: 200px;
   }
 }
 
@@ -67,5 +107,36 @@ $default-title__font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     font-size: xx-small;
     color: $default-subtitle__color;
     font-family: $default-subtitle__font;
+    font-weight: 100;
   }
+}
+
+.btn {
+  transform: scale(150%);
+  border-radius: 100px;
+  border-width: 2px;
+  background-color: lightcyan;
+
+  &--title {
+    color: rgb(72, 72, 196);
+    font-family: $default-title__font;
+    font-weight: bold;
+  }
+
+  &--subtitle {
+    font-size: xx-small;
+    color: $default-subtitle__color;
+    font-family: $default-subtitle__font;
+    font-weight: 100;
+    transform: scale(67%);
+  }
+}
+
+.btn:hover {
+  transform: scale(155%);
+  cursor: grab;
+}
+
+.btn:active {
+  color: red;
 }
