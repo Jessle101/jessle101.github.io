@@ -1,37 +1,88 @@
-.box {
-  display: flex;
-  flex-direction: column;
-  align-content: space-evenly;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  border: 2px solid red;
-  width: 200vh;
-  height: 200vh;
-}
-.box__email {
-  background-color: white;
-  border: 2px solid black;
-  margin-left: 20vw;
-  transform: scale(10%);
-}
-.box__github {
-  background-color: white;
-  border: 2px solid black;
-  margin-left: 20vw;
-  transform: scale(10%);
-}
-.box__linkedin {
-  background-color: white;
-  border: 2px solid black;
-  margin-left: 20vw;
-  transform: scale(50%);
+* {
+  list-style: none;
 }
 
-.img {
-  color: aliceblue;
+header {
+  font-weight: bold;
+  text-align: center;
+  background-color: whitesmoke;
 }
-.img__e {
-  color: 0;
+
+.container {
+  width: 190vh;
+  height: 125vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  transform: scale(80%);
+}
+.container__email {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.container__github {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.container__linkedin {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.container__mcpedl {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.container__youtube {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.container__pixelsperfect {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+section ul > li > img {
+  max-width: 100px;
+  max-height: 100px;
+  background-color: whitesmoke;
 }
 
 nav {
@@ -53,4 +104,23 @@ nav > ul {
   flex-direction: row;
   justify-items: flex-end;
   align-items: center;
+}
+
+.text {
+  color: black;
+}
+.text--title {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.text--subtitle {
+  font-size: xx-small;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+}
+.text--socials {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  font-size: small;
 }
