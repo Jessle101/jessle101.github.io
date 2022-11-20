@@ -1,0 +1,86 @@
+@use "./mixins";
+@import "./palette";
+@import "./formatting";
+
+* {
+  list-style: none;
+}
+
+header {
+  font-weight: bold;
+  font-size: 48px;
+  text-decoration: underline;
+  text-align: center;
+  background-color: $default-background__color;
+  padding-bottom: 10px;
+}
+
+.container {
+  width: 180vh;
+  height: 127.5vh;
+  //flexbox
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  // border: 2px solid black;
+  &__email {
+    @include mixins.container;
+  }
+
+  &__github {
+    @include mixins.container;
+  }
+
+  &__linkedin {
+    @include mixins.container;
+  }
+
+  &__mcpedl {
+    @include mixins.container;
+  }
+
+  &__youtube {
+    @include mixins.container;
+  }
+
+  &__pixelsperfect {
+    @include mixins.container;
+  }
+}
+
+section ul > li > img {
+  width: 250px;
+  height: 250px;
+}
+
+section ul > li > a > img {
+  width: 250px;
+  height: 250px;
+}
+
+#email {
+  width: 325px;
+  height: 250px;
+}
+.text {
+  color: black;
+
+  &--title {
+    color: $default-title__color;
+    font-family: $default-title__font;
+  }
+  &--subtitle {
+    font-size: 24px;
+    color: $default-subtitle__color;
+    font-family: $default-subtitle__font;
+    font-weight: 100;
+  }
+
+  &--socials {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-size: 30px;
+  }
+}
