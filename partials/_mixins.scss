@@ -1,0 +1,15 @@
+@import "./palette";
+@import "./formatting";
+
+@mixin default-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin module-home {
+  padding-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}

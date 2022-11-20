@@ -1,51 +1,24 @@
-$default-background__color: whitesmoke;
-$default-subtitle__color: lightslategrey;
-$default-subtitle__font: Arial;
-$default-title__color: black;
-$default-title__font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+@use "./partials/devices";
+@use "./partials/mixins";
+@import "./partials/formatting";
+@import "./partials/palette";
+@import "./partials/nav.scss";
 
 * {
   margin: 0;
 }
 
-// Sections Formatting
-nav {
-  background-color: $default-background__color;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-nav > ul {
-  // border: 1px solid black;
-  margin-right: 10vh;
-  width: 30vh;
-  height: 10vh;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  justify-items: flex-end;
-  align-items: center;
-}
-
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.default-flex;
   background-color: $default-background__color;
+  background-image: $gradient-radial;
 }
 
 .card {
-  width: 500vh;
-  height: 350vh;
+  width: 1000vh;
+  height: 500vh;
   //flexbox
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -57,41 +30,34 @@ main {
     align-items: center;
   }
   &__landing {
-    padding-top: 10px;
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    text-align: center;
+    @include mixins.module-home;
+    width: 400px;
+    height: 400px;
   }
 
   &__about-me {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    text-align: center;
+    @include mixins.module-home;
+    width: 400px;
+    height: 400px;
   }
 
   &__tech-skills {
-    border: 1px solid black;
-    width: 350px;
-    height: 200px;
-    text-align: center;
+    @include mixins.module-home;
+    width: 700px;
+    height: 400px;
   }
 
   &__projects {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    text-align: center;
+    @include mixins.module-home;
+    width: 400px;
+    height: 400px;
   }
 
   &__contact {
+    @include mixins.module-home;
     // border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    padding-bottom: 50px;
-    width: 200px;
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -113,22 +79,22 @@ main {
 
 .btn {
   transform: scale(150%);
-  border-radius: 100px;
+  border-radius: 200px;
   border-width: 2px;
   background-color: lightcyan;
 
   &--title {
     color: rgb(72, 72, 196);
+    font-size: $default-title__size;
     font-family: $default-title__font;
     font-weight: bold;
   }
 
   &--subtitle {
-    font-size: xx-small;
-    color: $default-subtitle__color;
+    font-size: $default-subtitle__size;
     font-family: $default-subtitle__font;
+    color: $default-subtitle__color;
     font-weight: 100;
-    transform: scale(67%);
   }
 }
 

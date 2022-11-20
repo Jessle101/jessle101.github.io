@@ -1,0 +1,33 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// @content rule
+// ->
+// @content is an empty placeholder
+@mixin phone {
+  @media only screen and (max-width: $sm) {
+    // will take some content later
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and (min-width: ($md + 1px)) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: ($lg + 1px)) and (max-width: $xl) {
+    @content;
+  }
+}
