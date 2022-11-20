@@ -1,5 +1,6 @@
-@use "../partials/devices";
 @use "../partials/mixins";
+@use "../partials/devices";
+
 @import "../partials/palette";
 @import "../partials/formatting";
 @import "../partials/nav.scss";
@@ -16,84 +17,6 @@ header {
   text-align: center;
   background-color: $default-background__color;
   padding-bottom: 10px;
-}
-.container {
-  width: 220vh;
-  height: 150vh;
-  //flexbox
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  transform: scale(85%);
-  // border: 2px solid black;
-
-  &__email {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-
-  &__github {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-
-  &__linkedin {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-
-  &__mcpedl {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-
-  &__youtube {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-
-  &__pixelsperfect {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
 }
 
 section ul > li > img {

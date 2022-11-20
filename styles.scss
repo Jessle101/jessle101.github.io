@@ -4,6 +4,40 @@
 @import "./partials/palette";
 @import "./partials/nav.scss";
 
+.container {
+  width: 180vh;
+  height: 127.5vh;
+  //flexbox
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  // border: 2px solid black;
+  &__email {
+    @include mixins.container;
+  }
+
+  &__github {
+    @include mixins.container;
+  }
+
+  &__linkedin {
+    @include mixins.container;
+  }
+
+  &__mcpedl {
+    @include mixins.container;
+  }
+
+  &__youtube {
+    @include mixins.container;
+  }
+
+  &__pixelsperfect {
+    @include mixins.container;
+  }
+}
 * {
   margin: 0;
 }
