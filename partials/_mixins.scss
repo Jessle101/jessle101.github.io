@@ -7,22 +7,40 @@
   align-items: center;
 }
 
-@mixin module-home {
+@mixin card-default-styling {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  // change later
   padding-top: 5px;
   border: 1px solid black;
   border-radius: 5px;
   text-align: center;
 }
 
-// width: 500px;
-// height: 500px;
-@mixin container {
+@mixin default-link-styling {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
   border-radius: 50px;
-  width: 400px;
-  height: 400px;
 }
+
+// @mixin main-container {
+//   display: grid;
+//   /* each column should be the same width */
+//   grid-template-columns: 1fr 1fr 1fr;
+//   /* each column should have some space between them */
+//   grid-gap: 20px;
+// }
+
+// @mixin container {
+//   //flexbox
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   align-items: center;
+// }

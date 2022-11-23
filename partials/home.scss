@@ -8,8 +8,8 @@ main {
   background-image: $gradient-radial;
 }
 
-.card {
-  width: 1000vh;
+.sectionWrapper {
+  width: 1000vw;
   height: 500vh;
   //flexbox
   display: flex;
@@ -17,41 +17,25 @@ main {
   flex-direction: column;
   align-items: center;
 
-  &__secondary {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-  }
   &__landing {
-    @include mixins.module-home;
-    width: 400px;
-    height: 400px;
+    @include mixins.card-default-styling;
   }
 
   &__about-me {
-    @include mixins.module-home;
-    width: 400px;
-    height: 400px;
+    @include mixins.card-default-styling;
   }
 
   &__tech-skills {
-    @include mixins.module-home;
-    width: 700px;
-    height: 400px;
+    @include mixins.card-default-styling;
   }
 
   &__projects {
-    @include mixins.module-home;
-    width: 400px;
-    height: 400px;
+    @include mixins.card-default-styling;
   }
 
   &__contact {
-    @include mixins.module-home;
+    @include mixins.card-default-styling;
     // border: 1px solid black;
-    width: 400px;
-    height: 400px;
   }
 }
 

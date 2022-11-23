@@ -16,8 +16,7 @@ header {
 }
 
 .container {
-  width: 180vh;
-  height: 127.5vh;
+  width: 80vw;
   //flexbox
   display: flex;
   flex-wrap: wrap;
@@ -25,45 +24,31 @@ header {
   flex-direction: row;
   align-items: center;
   // border: 2px solid black;
-  &__email {
-    @include mixins.container;
-  }
-
-  &__github {
-    @include mixins.container;
-  }
-
-  &__linkedin {
-    @include mixins.container;
-  }
-
-  &__mcpedl {
-    @include mixins.container;
-  }
-
-  &__youtube {
-    @include mixins.container;
-  }
-
-  &__pixelsperfect {
-    @include mixins.container;
+  &__link {
+    @include mixins.default-link-styling;
+    width: 90%;
   }
 }
 
-section ul > li > img {
-  width: 250px;
-  height: 250px;
+.link {
+  &__img {
+    color: red;
+  }
 }
+// section ul > li > img {
+//   width: 250px;
+//   height: 250px;
+// }
 
-section ul > li > a > img {
-  width: 250px;
-  height: 250px;
-}
+// section ul > li > a > img {
+//   width: 250px;
+//   height: 250px;
+// }
 
-#email {
-  width: 325px;
-  height: 250px;
-}
+// #email {
+//   width: 325px;
+//   height: 250px;
+// }
 .text {
   color: black;
 
