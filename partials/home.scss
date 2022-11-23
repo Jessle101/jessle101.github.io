@@ -1,0 +1,86 @@
+@use "./mixins";
+@import "./palette";
+@import "./formatting";
+
+main {
+  @include mixins.default-flex;
+  background-color: $default-background__color;
+  background-image: $gradient-radial;
+}
+
+.sectionWrapper {
+  width: 1000vw;
+  height: 500vh;
+  //flexbox
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  &__landing {
+    @include mixins.card-default-styling;
+  }
+
+  &__about-me {
+    @include mixins.card-default-styling;
+  }
+
+  &__tech-skills {
+    @include mixins.card-default-styling;
+  }
+
+  &__projects {
+    @include mixins.card-default-styling;
+  }
+
+  &__contact {
+    @include mixins.card-default-styling;
+    // border: 1px solid black;
+  }
+}
+
+// Text Formatting Styles
+.text {
+  color: black;
+
+  &--title {
+    color: $default-title__color;
+    font-family: $default-title__font;
+  }
+  &--subtitle {
+    font-size: xx-small;
+    color: $default-subtitle__color;
+    font-family: $default-subtitle__font;
+    font-weight: 100;
+  }
+}
+
+.btn {
+  transform: scale(150%);
+  border-radius: 200px;
+  border-width: 2px;
+  background-color: lightcyan;
+
+  &--title {
+    color: rgb(72, 72, 196);
+    font-size: $default-title__size;
+    font-family: $default-title__font;
+    font-weight: bold;
+  }
+
+  &--subtitle {
+    font-size: $default-subtitle__size;
+    font-family: $default-subtitle__font;
+    color: $default-subtitle__color;
+    font-weight: 100;
+  }
+}
+
+.btn:hover {
+  transform: scale(155%);
+  cursor: grab;
+}
+
+.btn:active {
+  color: red;
+}

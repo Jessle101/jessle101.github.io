@@ -1,0 +1,10 @@
+@use "./partials/devices";
+@import "./partials/formatting";
+@import "./partials/palette";
+@import "./partials/nav.scss";
+@import "./partials/home.scss";
+@import "./partials/contact.scss";
+
+* {
+  margin: 0;
+}
