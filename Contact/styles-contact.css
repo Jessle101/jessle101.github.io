@@ -1,0 +1,148 @@
+/* SCSS RGB */
+/* SCSS Gradient */
+/* SCSS RGB */
+/* SCSS Gradient */
+nav {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav > ul {
+  margin-right: 10vh;
+  width: 30vh;
+  height: 10vh;
+  font-size: 24px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+/* SCSS RGB */
+/* SCSS Gradient */
+/* SCSS RGB */
+/* SCSS Gradient */
+* {
+  list-style: none;
+}
+
+header {
+  font-weight: bold;
+  font-size: 48px;
+  text-decoration: underline;
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+}
+
+.container {
+  width: 180vh;
+  height: 127.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.container__email {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+.container__github {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+.container__linkedin {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+.container__mcpedl {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+.container__youtube {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+.container__pixelsperfect {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+section ul > li > img {
+  width: 250px;
+  height: 250px;
+}
+
+section ul > li > a > img {
+  width: 250px;
+  height: 250px;
+}
+
+#email {
+  width: 325px;
+  height: 250px;
+}
+
+.text {
+  color: black;
+}
+.text--title {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.text--subtitle {
+  font-size: 24px;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+}
+.text--socials {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  font-size: 30px;
+}
