@@ -17,6 +17,7 @@
 }
 @media only screen and (max-width: 576px) {
   .nav .projects__container__timestop {
+    height: auto;
     width: 60vw;
   }
   .nav .projects .btnStyle {
@@ -59,7 +60,7 @@ main {
 
 .sectionWrapper {
   width: 90vw;
-  height: 350vh;
+  height: 325vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -68,6 +69,7 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .sectionWrapper .projects__container__timestop {
+    height: auto;
     width: 60vw;
   }
   .sectionWrapper .projects .btnStyle {
@@ -333,6 +335,7 @@ header {
 }
 @media only screen and (max-width: 576px) {
   .container__link .projects__container__timestop {
+    height: auto;
     width: 60vw;
   }
   .container__link .projects .btnStyle {
@@ -343,6 +346,18 @@ header {
     font-weight: bold;
   }
 }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .container__link .container {
+    width: 80vw;
+    height: 85vh;
+    padding: 4vh;
+  }
+  .container__link .container__link {
+    width: 25%;
+    height: 40%;
+  }
+}
+
 .link__img {
   display: block;
   margin-right: auto;

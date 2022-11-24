@@ -14,6 +14,7 @@ $xxl: 1400px;
     .projects {
       &__container {
         &__timestop {
+          height: auto;
           width: 60vw;
         }
       }
@@ -44,5 +45,16 @@ $xxl: 1400px;
 @mixin laptop {
   @media only screen and (min-width: ($lg + 1px)) and (max-width: $xl) {
     @content;
+    .container {
+      //flexbox
+      width: 80vw;
+      height: 85vh;
+      padding: 4vh;
+      // border: 2px solid black;
+      &__link {
+        width: 25%;
+        height: 40%;
+      }
+    }
   }
 }

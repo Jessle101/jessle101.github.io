@@ -10,7 +10,7 @@ main {
 
 .sectionWrapper {
   width: 90vw;
-  height: 350vh;
+  height: 325vh;
   @include devices.phone;
   //flexbox
   @include mixins.display-flex(column, space-evenly, center, wrap);
