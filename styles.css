@@ -2,27 +2,29 @@
 /* SCSS Gradient */
 /* SCSS RGB */
 /* SCSS Gradient */
-nav {
+/* SCSS RGB */
+/* SCSS Gradient */
+.nav {
   background-color: whitesmoke;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-nav > ul {
+.nav__list {
   margin-right: 10vh;
   width: 30vh;
   height: 10vh;
   font-size: 24px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   flex-direction: row;
-  justify-items: flex-end;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.nav__list__item {
+  color: aqua;
 }
 
 /* SCSS RGB */
@@ -34,22 +36,17 @@ main {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  background-image: radial-gradient(
-    rgba(248, 255, 229, 0.25),
-    rgba(6, 214, 160, 0.25),
-    rgba(27, 154, 170, 0.25),
-    rgba(239, 71, 111, 0.25),
-    rgba(255, 196, 61, 0.25)
-  );
+  background-image: radial-gradient(rgba(248, 255, 229, 0.25), rgba(6, 214, 160, 0.25), rgba(27, 154, 170, 0.25), rgba(239, 71, 111, 0.25), rgba(255, 196, 61, 0.25));
 }
 
 .sectionWrapper {
   width: 1000vw;
   height: 500vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .sectionWrapper__landing {
   display: flex;
@@ -107,8 +104,7 @@ main {
 }
 .text--title {
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .text--subtitle {
   font-size: xx-small;
@@ -118,7 +114,6 @@ main {
 }
 
 .btn {
-  transform: scale(150%);
   border-radius: 200px;
   border-width: 2px;
   background-color: lightcyan;
@@ -126,8 +121,7 @@ main {
 .btn--title {
   color: rgb(72, 72, 196);
   font-size: large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
 .btn--subtitle {
@@ -157,19 +151,20 @@ main {
 header {
   font-weight: bold;
   font-size: 48px;
-  text-decoration: underline;
   text-align: center;
   background-color: whitesmoke;
   padding-bottom: 10px;
 }
 
 .container {
-  width: 80vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 85vh;
+  padding: 4vh;
 }
 .container__link {
   display: flex;
@@ -178,11 +173,29 @@ header {
   align-items: center;
   border: 2px solid black;
   border-radius: 50px;
-  width: 90%;
+  padding: 2.5vh;
+  width: 25%;
+  height: 40%;
 }
-
 .link__img {
-  color: red;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 7.5vw;
+}
+.link__img--enlarge {
+  width: 12vw;
+}
+.link__img--enlarge2 {
+  width: 9vw;
+}
+.link__img--shrink {
+  width: 7vw;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.link__img:hover {
+  transform: scale(110%);
 }
 
 .text {
@@ -190,11 +203,10 @@ header {
 }
 .text--title {
   color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .text--subtitle {
-  font-size: 24px;
+  font-size: 18px;
   color: lightslategrey;
   font-family: Arial;
   font-weight: 100;
@@ -202,9 +214,14 @@ header {
 .text--socials {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: red;
-  font-size: 30px;
+  font-size: 1.5vw;
 }
 
 * {
   margin: 0;
+}
+
+#footer {
+  padding: 2vh;
+  text-align: center;
 }

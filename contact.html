@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Contact | Jessie Osti</title>
-    <nav>
-      <ul>
-        <li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list__item">
           <a href="./index.html">Home</a>
         </li>
-        <li>
+        <li class="nav__list__item">
           <a href="./contact.html">Contact</a>
         </li>
       </ul>
@@ -25,20 +25,25 @@
         <ul class="container">
           <li class="container__link">
             <p class="text--subtitle">Email Address</p>
-            <img
-              class="link__img"
-              src="../Images/email.png"
-              alt="Email Logo"
-              id="email"
-            />
-            <p class="text--socials">jessie.g.osti@gmail.com</p>
+            <a class="text--socials" href="mailto:jessie.g.osti@gmail.com"
+              ><img
+                class="link__img"
+                src="./Images/email.png"
+                alt="Email Logo"
+                id="email"
+              />
+              <a
+              class="text--socials"
+              href="mailto:jessie.g.osti@gmail.com"
+              >jessie.g.osti@gmail.com</a
+            >
           </li>
           <li class="container__link">
             <p class="text--subtitle">Github Profile</p>
             <a href="https://github.com/Jessle101" target="_blank"
               ><img
                 class="link__img"
-                src="../Images/github.png"
+                src="./Images/github.png"
                 alt="Github Logo"
             /></a>
             <a
@@ -55,8 +60,8 @@
               href="https://www.linkedin.com/in/jessie-osti-9b8909256/"
               target="_blank"
               ><img
-                class="link__img"
-                src="../Images/linkedin.png"
+                class="link__img link__img--enlarge2"
+                src="./Images/linkedin.png"
                 alt="LinkedIn Logo"
             /></a>
             <a
@@ -71,7 +76,7 @@
             <p class="text--subtitle">MCPEDL</p>
             <a href="https://mcpedl.com/user/jesser101/" target="_blank"
               ><img
-                class="link__img"
+                class="link__img link__img--shrink"
                 src="../Images/mcpedl.png"
                 alt="MCPEDL Logo"
             /></a>
@@ -87,8 +92,8 @@
             <p class="text--subtitle">YouTube</p>
             <a href="https://www.youtube.com/@Jessie101" target="_blank"
               ><img
-                class="link__img"
-                src="../Images/YouTube.png"
+                class="link__img link__img--enlarge"
+                src="./Images/YouTube.png"
                 alt="YouTube Logo"
             /></a>
             <a
@@ -104,7 +109,7 @@
             <a href="https://www.pixelsperfect.net/" target="_blank"
               ><img
                 class="link__img"
-                src="../Images/pixelsperfect.png"
+                src="./Images/pixelsperfect.png"
                 alt="Pixels Perfect Logo"
             /></a>
             <a
@@ -119,4 +124,5 @@
       </section>
     </main>
   </body>
+  <footer id="footer">© Jessie Osti, 2022 - all rights reserved</footer>
 </html>

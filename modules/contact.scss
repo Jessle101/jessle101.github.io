@@ -1,0 +1,90 @@
+@use "../partials/mixins";
+@use "../partials/devices";
+@import "../partials/palette";
+@import "../partials/formatting";
+
+* {
+  list-style: none;
+}
+
+header {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  background-color: $default-background__color;
+  padding-bottom: 10px;
+}
+
+.container {
+  //flexbox
+  @include mixins.display-flex(row, space-between, center, wrap);
+  @include devices.phone;
+  @include devices.tablet;
+  @include devices.tablet-landscape;
+  @include devices.laptop;
+  width: 80vw;
+  height: 85vh;
+  padding: 4vh;
+  // border: 2px solid black;
+  &__link {
+    @include mixins.default-link-styling;
+    @include devices.phone;
+    @include devices.tablet;
+    @include devices.tablet-landscape;
+    @include devices.laptop;
+    width: 25%;
+    height: 40%;
+  }
+}
+
+.link {
+  &__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 7.5vw;
+    @include devices.phone;
+    @include devices.tablet;
+    @include devices.tablet-landscape;
+    @include devices.laptop;
+
+    &--enlarge {
+      width: 12vw;
+    }
+
+    &--enlarge2 {
+      width: 9vw;
+    }
+
+    &--shrink {
+      width: 7vw;
+      border: 2px solid transparent;
+      border-radius: 10px;
+    }
+  }
+
+  &__img:hover {
+    transform: scale(110%);
+  }
+}
+
+.text {
+  color: black;
+
+  &--title {
+    color: $default-title__color;
+    font-family: $default-title__font;
+  }
+  &--subtitle {
+    font-size: 18px;
+    color: $default-subtitle__color;
+    font-family: $default-subtitle__font;
+    font-weight: 100;
+  }
+
+  &--socials {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-size: 1.5vw;
+  }
+}
