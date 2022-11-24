@@ -1,0 +1,147 @@
+@use "../partials/mixins";
+@use "../partials/devices";
+@import "../partials/palette";
+@import "../partials/formatting";
+main {
+  @include mixins.default-flex;
+  background-color: $default-background__color;
+  background-image: $gradient-radial;
+}
+
+.sectionWrapper {
+  width: 90vw;
+  height: 350vh;
+  @include devices.phone;
+  //flexbox
+  @include mixins.display-flex(column, space-evenly, center, wrap);
+
+  &__landing {
+    @include mixins.card-default-styling;
+
+    &__card {
+      @include mixins.card-border;
+      font-style: italic;
+      font-family: cursive;
+      #img {
+        width: 20vh;
+      }
+    }
+  }
+
+  &__about-me {
+    @include mixins.card-default-styling;
+
+    &__card {
+      padding: 20px;
+      font-style: italic;
+      font-family: cursive;
+      #img {
+        padding: 10px;
+        width: 50%;
+      }
+    }
+  }
+
+  &__tech-skills {
+    @include mixins.card-default-styling;
+
+    &__card {
+      padding: 20px;
+      font-style: italic;
+      font-family: cursive;
+
+      &--list {
+        padding: 10px;
+        font-style: normal;
+        font-family: monospace;
+      }
+
+      #img {
+        padding: 10px;
+        width: 15%;
+        border: 2px solid transparent;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  &__projects {
+    @include mixins.card-default-styling;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  &__contact {
+    @include mixins.card-default-styling;
+    // border: 1px solid black;
+  }
+}
+
+.contactMe {
+  padding: 10px;
+  width: 15%;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+
+.contactMe:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.projects {
+  &__container {
+    padding: 20px;
+    @include mixins.display-flex(column, flex-start, flex-end, wrap);
+
+    &__timestop {
+      padding: 10px;
+      margin-bottom: 25px;
+      background-image: url(./Images/timestop.png);
+      color: white;
+      width: 24vw;
+      height: 35vh;
+      border: 4px solid rgb(183, 30, 30);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--btn {
+        @include mixins.default-btn;
+      }
+    }
+
+    &__cmdblocks {
+      padding: 10px;
+      background-image: url(./Images/cmdblocks.png);
+      color: white;
+      width: 24vw;
+      height: 35vh;
+      border: 4px solid rgb(183, 30, 30);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--btn {
+        @include mixins.default-btn;
+      }
+    }
+  }
+}
+
+.btnStyle {
+  height: 5vh;
+  border: 3px solid limegreen;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.btnStyle:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
