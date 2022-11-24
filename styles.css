@@ -18,7 +18,8 @@
 @media only screen and (max-width: 576px) {
   .nav .projects__container__timestop {
     height: auto;
-    width: 60vw;
+    width: 75vw;
+    height: 40vh;
   }
   .nav .projects .btnStyle {
     height: 9vh;
@@ -70,7 +71,8 @@ main {
 @media only screen and (max-width: 576px) {
   .sectionWrapper .projects__container__timestop {
     height: auto;
-    width: 60vw;
+    width: 75vw;
+    height: 40vh;
   }
   .sectionWrapper .projects .btnStyle {
     height: 9vh;
@@ -336,7 +338,8 @@ header {
 @media only screen and (max-width: 576px) {
   .container__link .projects__container__timestop {
     height: auto;
-    width: 60vw;
+    width: 75vw;
+    height: 40vh;
   }
   .container__link .projects .btnStyle {
     height: 9vh;
