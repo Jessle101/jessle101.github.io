@@ -18,10 +18,6 @@ header {
 .container {
   //flexbox
   @include mixins.display-flex(row, space-between, center, wrap);
-  @include devices.phone;
-  @include devices.tablet;
-  @include devices.tablet-landscape;
-  @include devices.laptop;
   width: 80vw;
   height: 85vh;
   padding: 4vh;
@@ -43,10 +39,6 @@ header {
     margin-right: auto;
     margin-left: auto;
     width: 7.5vw;
-    @include devices.phone;
-    @include devices.tablet;
-    @include devices.tablet-landscape;
-    @include devices.laptop;
 
     &--enlarge {
       width: 12vw;
