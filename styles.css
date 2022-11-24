@@ -51,11 +51,11 @@ main {
 }
 
 .sectionWrapper {
-  width: 1000vw;
-  height: 500vh;
+  width: 90vw;
+  height: 350vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -69,91 +69,216 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 5px;
-  border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
+}
+.sectionWrapper__landing .text {
+  color: black;
+}
+.sectionWrapper__landing .text--title {
+  font-size: xx-large;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sectionWrapper__landing .text--subtitle {
+  margin-top: 3px;
+  font-size: medium;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+}
+.sectionWrapper__landing__card {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2vh;
+  padding: 2vw;
+  font-style: italic;
+  font-family: cursive;
+}
+.sectionWrapper__landing__card #img {
+  width: 20vh;
 }
 .sectionWrapper__about-me {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 5px;
-  border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
+}
+.sectionWrapper__about-me .text {
+  color: black;
+}
+.sectionWrapper__about-me .text--title {
+  font-size: xx-large;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sectionWrapper__about-me .text--subtitle {
+  margin-top: 3px;
+  font-size: medium;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+}
+.sectionWrapper__about-me__card {
+  padding: 20px;
+  font-style: italic;
+  font-family: cursive;
+}
+.sectionWrapper__about-me__card #img {
+  padding: 10px;
+  width: 50%;
 }
 .sectionWrapper__tech-skills {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 5px;
-  border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
+}
+.sectionWrapper__tech-skills .text {
+  color: black;
+}
+.sectionWrapper__tech-skills .text--title {
+  font-size: xx-large;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sectionWrapper__tech-skills .text--subtitle {
+  margin-top: 3px;
+  font-size: medium;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
+}
+.sectionWrapper__tech-skills__card {
+  padding: 20px;
+  font-style: italic;
+  font-family: cursive;
+}
+.sectionWrapper__tech-skills__card--list {
+  padding: 10px;
+  list-style: circle;
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.sectionWrapper__tech-skills__card #img {
+  padding: 10px;
+  width: 15%;
+  border: 2px solid transparent;
+  border-radius: 50px;
 }
 .sectionWrapper__projects {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 5px;
-  border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
+  width: 20vw;
+  height: 20vw;
+}
+.sectionWrapper__projects .text {
+  color: black;
+}
+.sectionWrapper__projects .text--title {
+  font-size: xx-large;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sectionWrapper__projects .text--subtitle {
+  margin-top: 3px;
+  font-size: medium;
+  color: lightslategrey;
+  font-family: Arial;
+  font-weight: 100;
 }
 .sectionWrapper__contact {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 5px;
-  border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
 }
-
-.text {
+.sectionWrapper__contact .text {
   color: black;
 }
-.text--title {
+.sectionWrapper__contact .text--title {
+  font-size: xx-large;
   color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.text--subtitle {
-  font-size: xx-small;
+.sectionWrapper__contact .text--subtitle {
+  margin-top: 3px;
+  font-size: medium;
   color: lightslategrey;
   font-family: Arial;
   font-weight: 100;
 }
 
-.btn {
-  border-radius: 200px;
-  border-width: 2px;
-  background-color: lightcyan;
+.contactMe {
+  padding: 10px;
+  width: 15%;
+  border: 2px solid transparent;
+  border-radius: 50px;
 }
-.btn--title {
-  color: rgb(72, 72, 196);
-  font-size: large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+.contactMe:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.projects__container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.projects__container__timestop {
+  padding: 10px;
+  background-image: url(./Images/timestop.png);
+  color: white;
+  width: 30vw;
+  height: 50vh;
+  border: 4px solid rgb(183, 30, 30);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.projects__container__timestop--btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: none;
+  border: 2px solid transparent;
+}
+
+.btnStyle {
+  width: 6.5vw;
+  height: 5vh;
+  border: 3px solid limegreen;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-.btn--subtitle {
-  font-size: medium;
-  font-family: Arial;
-  color: lightslategrey;
-  font-weight: 100;
-}
 
-.btn:hover {
-  transform: scale(155%);
-  cursor: grab;
-}
-
-.btn:active {
-  color: red;
+.btnStyle:hover {
+  transform: scale(105%);
+  cursor: pointer;
 }
 
 /* SCSS RGB */

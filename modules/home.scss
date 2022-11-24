@@ -9,26 +9,68 @@ main {
 }
 
 .sectionWrapper {
-  width: 1000vw;
-  height: 500vh;
+  width: 90vw;
+  height: 350vh;
   @include devices.phone;
   //flexbox
-  @include mixins.display-flex(column, space-between, center, wrap);
+  @include mixins.display-flex(column, space-evenly, center, wrap);
 
   &__landing {
     @include mixins.card-default-styling;
+    margin-top: 10px;
+
+    &__card {
+      @include mixins.card-border;
+      font-style: italic;
+      font-family: cursive;
+      #img {
+        width: 20vh;
+      }
+    }
   }
 
   &__about-me {
     @include mixins.card-default-styling;
+
+    &__card {
+      padding: 20px;
+      font-style: italic;
+      font-family: cursive;
+      #img {
+        padding: 10px;
+        width: 50%;
+      }
+    }
   }
 
   &__tech-skills {
     @include mixins.card-default-styling;
+
+    &__card {
+      padding: 20px;
+      font-style: italic;
+      font-family: cursive;
+
+      &--list {
+        padding: 10px;
+        list-style: circle;
+        font-style: normal;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      #img {
+        padding: 10px;
+        width: 15%;
+        border: 2px solid transparent;
+        border-radius: 50px;
+      }
+    }
   }
 
   &__projects {
     @include mixins.card-default-styling;
+    width: 20vw;
+    height: 20vw;
   }
 
   &__contact {
@@ -37,47 +79,58 @@ main {
   }
 }
 
-// Text Formatting Styles
-.text {
-  color: black;
+.contactMe {
+  padding: 10px;
+  width: 15%;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
 
-  &--title {
-    color: $default-title__color;
-    font-family: $default-title__font;
-  }
-  &--subtitle {
-    font-size: xx-small;
-    color: $default-subtitle__color;
-    font-family: $default-subtitle__font;
-    font-weight: 100;
+.contactMe:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.projects {
+  &__container {
+    padding: 20px;
+    @include mixins.display-flex(column, flex-start, flex-end, wrap);
+
+    &__timestop {
+      padding: 10px;
+      background-image: url(./Images/timestop.png);
+      color: white;
+      width: 30vw;
+      height: 50vh;
+      border: 4px solid rgb(183, 30, 30);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background-image: none;
+        border: 2px solid transparent;
+      }
+    }
   }
 }
 
-.btn {
-  border-radius: 200px;
-  border-width: 2px;
-  background-color: lightcyan;
-
-  &--title {
-    color: rgb(72, 72, 196);
-    font-size: $default-title__size;
-    font-family: $default-title__font;
-    font-weight: bold;
-  }
-
-  &--subtitle {
-    font-size: $default-subtitle__size;
-    font-family: $default-subtitle__font;
-    color: $default-subtitle__color;
-    font-weight: 100;
-  }
+.btnStyle {
+  width: 6.5vw;
+  height: 5vh;
+  border: 3px solid limegreen;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-.btn:hover {
-  transform: scale(155%);
-  cursor: grab;
-}
-
-.btn:active {
-  color: red;
+.btnStyle:hover {
+  transform: scale(105%);
+  cursor: pointer;
 }

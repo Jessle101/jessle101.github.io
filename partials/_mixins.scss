@@ -15,16 +15,41 @@
   flex-wrap: $wrap;
 }
 
+@mixin card-border {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2vh;
+  padding: 2vw;
+}
+
 @mixin card-default-styling {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   // change later
-  padding-top: 5px;
-  border: 1px solid black;
+  // border: 1px solid black;
+  padding-top: 10px;
   border-radius: 5px;
   text-align: center;
+
+  // Text Formatting Styles
+  .text {
+    color: black;
+
+    &--title {
+      font-size: xx-large;
+      color: $default-title__color;
+      font-family: $default-title__font;
+    }
+    &--subtitle {
+      margin-top: 3px;
+      font-size: medium;
+      color: $default-subtitle__color;
+      font-family: $default-subtitle__font;
+      font-weight: 100;
+    }
+  }
 }
 
 @mixin default-link-styling {
