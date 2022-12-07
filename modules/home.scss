@@ -10,7 +10,7 @@ main {
 
 .sectionWrapper {
   width: 90vw;
-  height: 325vh;
+  height: 425vh;
   @include devices.phone;
   //flexbox
   @include mixins.display-flex(column, space-evenly, center, wrap);
@@ -67,6 +67,7 @@ main {
 
   &__projects {
     @include mixins.card-default-styling;
+    margin-top: 200px;
     width: 20vw;
     height: 20vw;
   }
@@ -91,15 +92,48 @@ main {
 
 .projects {
   &__container {
-    padding: 20px;
-    @include mixins.display-flex(column, flex-start, flex-end, wrap);
+    width: 400%;
+    // border: 2px solid black;
+    // padding: 20px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 
     &__timestop {
       padding: 10px;
+      margin-top: 20px;
       background-image: url(./Images/timestop.png);
       color: white;
-      width: 25vw;
-      height: 40vh;
+      width: 22.5vw;
+      height: 35vh;
+      border: 4px solid rgb(183, 30, 30);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-image: none;
+        border: 2px solid transparent;
+      }
+    }
+
+    &__cmdblocks {
+      padding: 10px;
+      margin-top: 20px;
+      background-image: url(./Images/cmdblocks.png);
+      color: white;
+      width: 22.5vw;
+      height: 35vh;
       border: 4px solid rgb(183, 30, 30);
       border-radius: 10px;
       display: flex;
@@ -116,7 +150,63 @@ main {
         border: 2px solid transparent;
       }
     }
+
+    &__morse {
+      margin-left: 50px;
+      margin-top: 70px;
+      transform: scale(150%);
+      background-image: url(./Images/morse.png);
+      color: white;
+      width: 12vw;
+      height: 20vh;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &--btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background-image: none;
+        // border: 2px solid black;
+      }
+    }
+
+    &__fakeos {
+      padding: 0;
+      background-image: url(./Images/fakeos.png);
+      color: white;
+      width: 23.5vw;
+      height: 99vh;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transform: scale(75%);
+
+      &--btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background-image: none;
+        // border: 2px solid black;
+      }
+    }
   }
+}
+
+#fakeosTitle {
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+#fakeosText {
+  margin-left: 50px;
 }
 
 .btnStyle {
@@ -130,4 +220,26 @@ main {
 .btnStyle:hover {
   transform: scale(105%);
   cursor: pointer;
+}
+
+.projects {
+  @include devices.phone {
+    &__container {
+      &__timestop {
+        height: auto;
+        width: 75vw;
+        height: 40vh;
+      }
+    }
+  }
+}
+
+.btnStyle {
+  @include devices.phone {
+    height: 9vh;
+    border: 3px solid limegreen;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
 }

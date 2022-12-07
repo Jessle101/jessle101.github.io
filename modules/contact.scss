@@ -15,48 +15,25 @@ header {
   padding-bottom: 10px;
 }
 
-.container {
-  //flexbox
-  @include mixins.display-flex(row, space-between, center, wrap);
+.link {
+  margin-top: 100px;
+  margin-left: 175px;
+  //grid
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
   width: 80vw;
   height: 85vh;
   padding: 4vh;
   // border: 2px solid black;
-  &__link {
-    @include mixins.default-link-styling;
-    @include devices.phone;
-    @include devices.tablet;
-    @include devices.tablet-landscape;
-    @include devices.laptop;
-    width: 25%;
-    height: 40%;
-  }
-}
 
-.link {
   &__img {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 7.5vw;
+    width: 50%;
 
-    &--enlarge {
-      width: 12vw;
+    &:hover {
+      transform: scale(106%);
     }
-
-    &--enlarge2 {
-      width: 9vw;
-    }
-
-    &--shrink {
-      width: 7vw;
-      border: 2px solid transparent;
-      border-radius: 10px;
-    }
-  }
-
-  &__img:hover {
-    transform: scale(110%);
   }
 }
 
@@ -80,3 +57,41 @@ header {
     font-size: 1.5vw;
   }
 }
+
+.home {
+  width: 10%;
+  border: 2px solid black;
+  border-radius: 75px;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: scale(105%);
+    cursor: pointer;
+  }
+}
+
+// .container {
+//   @include devices.laptop {
+//     width: 80vw;
+//     height: 85vh;
+//     padding: 4vh;
+//     // border: 2px solid black;
+//     &__link {
+//       width: 25%;
+//       height: 40%;
+//     }
+//   }
+// }
+
+// .container {
+//   @include devices.laptop2 {
+//     width: 80vw;
+//     height: 85vh;
+//     padding: 4vh;
+//     // border: 2px solid black;
+//     &__link {
+//       width: 25%;
+//       height: 40%;
+//     }
+//   }
+// }
